@@ -1,0 +1,52 @@
+
+body {
+    background-color: rgba(208, 209, 190, 0.4);
+}
+
+.container1 {
+    width: 80%;
+    margin: 10px auto 10px;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.container2 {
+    width: 100%;
+    text-align: left;
+    margin: 0 auto 5px;
+    font-size: 11px;
+}
+
+.container3 {
+    width: 100%;
+    text-align: center;   
+    margin: auto ;
+    font-size: 13px;
+    color: brown;
+}
+
+.container3:hover {
+    background-color: rgba(221, 189, 189, 0.5);; /* İkona fare üzerine gelince arka plan rengini mavi yapma */
+}
+
+.container4 {
+    width: 100%;
+    text-align: center;
+    margin: auto ;
+    font-size: 20px;
+    color: rgb(0, 68, 255);
+}
+
+.icon2 {
+    font-size: 13px; /* İkon boyutunu belirleme */
+    color: rgb(55, 53, 179);
+    transition: background-color 0.5s; /* Arka plan rengi animasyonu için geçiş süresi */
+    background-color: transparent; /* Başlangıçta arka planı şeffaf yapma */
+    padding: 5px; /* İkon etrafına boşluk bırakma */
+    border-radius: 30%;
+    
+}
+
+.icon2:hover {
+    background-color: #4b49a8; /* İkona fare üzerine gelince arka plan rengini mavi yapma */
+}

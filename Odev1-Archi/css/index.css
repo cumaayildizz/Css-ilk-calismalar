@@ -1,0 +1,65 @@
+
+
+.background-image {
+    background-image: url("https://i.pinimg.com/736x/13/7c/7d/137c7d2f6af76f5338d80ea9bae33f45.jpg");
+    background-position: center; /* Resmi ortalamak için */
+    padding: 5px; /* Opsiyonel: içeriğin kenarlarından boşluk bırakmak için */
+}
+
+
+.icon2 {
+    font-size: 18px; /* İkon boyutunu belirleme */
+    color: rgb(4, 0, 255);
+    transition: background-color 0.5s; /* Arka plan rengi animasyonu için geçiş süresi */
+    background-color: transparent; /* Başlangıçta arka planı şeffaf yapma */
+    padding: 5px; /* İkon etrafına boşluk bırakma */
+    border-radius: 30%; /* Daire şeklinde kenarlık eklemek için */
+}
+
+.icon2:hover {
+    background-color: #4b49a8; /* İkona fare üzerine gelince arka plan rengini mavi yapma */
+}
+
+
+.title {
+    background: -webkit-linear-gradient(#000000, #ff0000);
+    text-align: center;
+    margin: 0px auto 100px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.font25 {
+    font-size: 25px;
+}
+
+.font70 {
+    font-size: 60px;
+    font-style: italic;
+}
+
+.contents {
+    text-align: center;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(146, 194, 209, 0.7);
+    margin: auto;
+    width: 30%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    text-align: left;
+    display: inline-block;
+    padding-left: 0;
+}
+
+li {
+    margin-left: 0;
+    padding-left: 0;
+}
