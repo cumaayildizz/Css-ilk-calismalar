@@ -1,8 +1,8 @@
 
-
 .background-image {
     background-image: url("https://i.pinimg.com/736x/13/7c/7d/137c7d2f6af76f5338d80ea9bae33f45.jpg");
     background-position: center; /* Resmi ortalamak için */
+    background-size: 100%; /* Resmin tüm sayfayı düzgün bir şekilde doldurması için */
     padding: 5px; /* Opsiyonel: içeriğin kenarlarından boşluk bırakmak için */
 }
 
