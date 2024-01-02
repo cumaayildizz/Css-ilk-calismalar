@@ -1,0 +1,209 @@
+body {
+    /*ilk once sayfamizi sifirliyoruz*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    background-image: url('icon/arka-plan.jpg');
+    background-size: cover; /* Resmi ekran boyutuna sığacak şekilde ayarlar */
+    background-repeat: no-repeat; /* Resmin tekrarlanmasını önler */
+    background-position: center center; /* Resmi ortalar */
+    position: relative;
+}
+/* Küçük ekranlar için stil değişiklikleri */
+@media only screen and (max-width: 600px) {
+    .ana-kutu {
+        grid-template-columns: repeat(2, 1fr); /* 2 sütun */
+    }
+
+    .medya-cerceve {
+        margin-left: 10px; /* Örnek değer, ihtiyaca göre ayarlayın */
+        margin-top: 5px; /* Örnek değer, ihtiyaca göre ayarlayın */
+    }
+
+    /* Diğer responsive stil değişiklikleri buraya ekleyebilirsiniz */
+}
+.header {
+    display: flex;
+    background-color: #ede6e3;
+    width: 100%;
+    height: 90px;   
+}
+.container-head {
+    display: flex;
+    width: 80%;
+    height: 20%;
+    justify-content: center; 
+    align-items: center;
+}
+.baslik {
+    display: flex;
+    width: 100%;
+    justify-content: center; 
+    align-items: center;
+    font: italic bold 30px "Arial", sans-serif;
+    color: #70595b;
+    transition: 0.4s;
+}
+.root:hover {
+    color: rgb(51, 255, 0); /* veya istediğiniz başka bir renk değeri */
+}
+
+.baslik:hover { /*uzerune cursor geldiginde aktive olur*/
+    cursor: pointer;
+    font-size: 60px;
+    color: red;
+    /*transform: rotate(360deg); /*180 derce dondurur*/
+}
+.logo {
+    width: 100px; /*flexte ortalama yapabilmek icin genislik verdik*/
+    display: flex; /* Flexbox kullanarak içeriği hizalamak için display:flex kullanın */
+    justify-content: center; /* Yatayda hizalama için center kullanın */
+    align-items: center; /* Dikeyde hizalama için center kullanın */
+  }
+
+.logo img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  .logo img:hover {
+    margin-top: 300px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    transform: rotate(360deg);
+  }
+.section {
+    width: auto;
+    height: calc(100% - 80px); 
+}
+.ana-kutu {
+display: grid;
+justify-content: center;
+align-content: center;
+width: auto;
+height: 650px;
+background-color: rgba(255, 255, 255, 0.5);
+gap: 25px;
+grid-template-rows: 150px 300px 80px ; /* 2 satır, eşit genişlikte (1fr) */
+grid-template-columns: repeat(4 , 300px) /* 2 sütun, eşit genişlikte (1fr) */
+}
+
+.icon i {
+    color: #ff0000;
+    font-size: 50px;
+}
+
+.text {
+    margin-left: -130px; /* İstenilen boşluğa göre ayarlayabilirsiniz */
+}
+
+i { 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-left: 30px ;
+    color: #996f6f;
+    font-size: 50px;
+    margin-bottom: 10px;
+    
+}
+i:hover {
+    color: #ff0000;
+    font-size: 60px;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-align: center;
+    flex-direction: column;
+    background-color: #ddd;
+    border-radius: 40px; 
+    color: #a14b4b;
+    box-shadow: 10px 10px 5px lightblue;
+    gap: 20px; /* Aralardaki boşluğu ayarlayabilirsiniz */
+}
+
+.communication {
+    padding-right: 30px;
+}
+
+.comment {
+    /*background-color: #eee;*/
+    padding-right: 30px;
+}
+.contents {
+    /*background-color: #f3eeee;*/
+    background-color: #c0dbdb;
+    border-radius: 40px;
+    grid-column: 1/5;
+    box-shadow: 10px 10px 5px rgb(159, 195, 207)
+}
+.contents p {
+    color: rgb(90, 89, 89);
+    display: flex;
+    line-height: 18px;
+    font-size: 18px;
+    align-items: center; /* Dikeyde ortala */
+    justify-content: center; /* Yatayda ortala */
+    
+}
+.contents h1 {
+    text-align: center;
+    color: rgb(90, 89, 89);
+}
+.sosyal-medya {
+    /*background-color: #f3eeee;*/
+    display: flex;
+    height: 75px;
+    background-color: #d8dbc0;
+    border-radius: 40px;
+    grid-column: 1/5;
+    box-shadow: 10px 10px 5px rgb(159, 195, 207)
+}
+
+div div a img { 
+    filter: grayscale(100%);
+    height: 55px;
+    border-radius: 30%;
+}
+.medya-cerceve {  
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin-left: 50px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+}
+.medya-cerceve a img:hover {
+    background-color: #ff0000;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    text-align: center; 
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    
+}
+.footer {
+    display: flex;
+    background-color: #ede6e3;
+    width: 100%;
+    height: 60px; 
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: larger;  
+}
+.footer h3 {
+    color: rgb(90, 89, 89);
+}
